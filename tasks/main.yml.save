@@ -1,0 +1,11 @@
+---
+ - name: Print a message
+      debug:
+        msg: "Hello! This is my first Ansible playbbok"
+    - name: Create a directory
+      file:
+        path: /tmp/ansible_test
+        state: directory
+    - name: Create a file
+      copy:
+        dest: /tmp/ansible_test/hello.txt
